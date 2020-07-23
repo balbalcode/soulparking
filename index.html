@@ -42,224 +42,331 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
 <body class="bg-light">
-	<div id="page" class="bg-light">
-		<div class="container-fluid">
-			<div class="row flex-xl-nowrap">
-				<div class="col-md-2 col-xl-2 bd-sidebar bg-white">
-				</div>
-				<div class="col-md-10 col-xl-10 bd-content">
-					<div class="bg-dark pt-3 pb-0 text-white row">
-						<section class="col-12 pr-5 row">
-							<div class="col-2 pt-2">
-								<span>
-									<i class="fa fa-chevron-left"></i>
-									<b class="font-09">Sembunyikan Menu</b>
-								</span>
-							</div>
-							<div class="col-10 float-right">
-								<div class="user-info float-right">
-									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvADbJmFh9JJ1F20ZqH5dLZAum3uRLIU-pGg&usqp=CAU" class="rounded-circle navbar-img float-left"  >
-									<p class="float-left font-09 ml-2">
-										<b>Ikbal Maulana</b><br>
-										<small>Super Admin</small>
-									</p>
-								</div>
-								<div class="dropdown-location mt-2 mr-5 float-right">
-									<select class="form-control form-control-sm select2 font-08 navbar-dropdown" >
-										<option>Jakarta</option>
-										<option>Bandung</option>
-										<option>Bekasi</option>
-										<option>Tanggerang Selatan</option>
-									</select>
-									<button class="btn btn-warning text-white font-07 btn-sm">
-										<i class="fa fa-plus"></i>
-									</button>
-								</div>
-							</div>			
-						</section>
+	<div class="wrapper">
+		<!-- Sidebar  -->
+		<nav id="sidebar">
+			<div class="py-3 text-center">
+				<img src="assets/images/logo-wide.png" class="navbar-img">
+			</div>
+
+			<ul class="list-unstyled ">
+				<li class="active-page">
+					<a href="#"><i class="fas fa-tachometer-alt"></i> &nbsp; Dashboard</a>
+				</li>
+				<li>
+					<a href="#reportSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> &nbsp;<i class="far fa-file-alt"></i> &nbsp; Pelaporan</a>
+					<ul class="collapse list-unstyled" id="reportSubMenu">
+						<li>
+							<a href="#">Laporan trafik</a>
+						</li>
+						<li>
+							<a href="#">Laporan Pendapatan</a>
+						</li>
+						<li>
+							<a href="#">Pendapatan</a>
+						</li>
+						<li>
+							<a href="#">Laporan Member</a>
+						</li>
+						<li>
+							<a href="#">Laporan GasKir</a>
+						</li>
+						<li>
+							<a href="#">Laporan Aplikasi</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#locationSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> &nbsp;<i class="fas fa-cog"></i> &nbsp; Pengaturan lokasi</a>
+					<ul class="collapse list-unstyled" id="locationSubMenu">
+						<li>
+							<a href="#">Info Lokir</a>
+						</li>
+						<li>
+							<a href="#">Tarif</a>
+						</li>
+						<li>
+							<a href="#">Gaskir</a>
+						</li>
+						<li>
+							<a href="#">Shift</a>
+						</li>
+						<li>
+							<a href="#">Produk</a>
+						</li>
+						<li>
+							<a href="#">Pemutihan Kendaraan</a>
+						</li>
+						<li>
+							<a href="#">Aktivasi Member</a>
+						</li>
+						<li>
+							<a href="#">Pengaturan Pengguna</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#settingSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> &nbsp;<i class="fas fa-user"></i> &nbsp; Sistem Admin</a>
+					<ul class="collapse list-unstyled" id="settingSubMenu">
+						<li>
+							<a href="#">Lokir</a>
+						</li>
+						<li>
+							<a href="#">Pengguna</a>
+						</li>
+						<li>
+							<a href="#">Resolution center</a>
+						</li>
+						<li>
+							<a href="#">Hardware</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-user-circle"></i> &nbsp; Sistem admin</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-power-off"></i> &nbsp; Logout</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Page Content  -->
+		<div id="content">
+			<div class="bg-dark pt-3 pb-0 text-white">
+				<section class="col-12 pr-5 row">
+					<div class="col-12 d-block pb-3 d-md-none text-center">
+						<img src="assets/images/logo-inverse.png" class="navbar-img">	
 					</div>
-
-					<div class="row">
-						<div class="col-12 pr-5">
-							<div class="breadcumb mt-3">
-								<h5 class="text-bold">Dashboard</h5>
-							</div>
-
-							<div class="bg-darkgrey rounded">
-								<div class="row  p-4">
-									<div class="col-12 col-md-3">
-										<div class="card pb-0 shadow-sm">
-											<div class="row p-2">
-												<div class="col-6">
-													<p class="text-semibold font-08">
-														KEDATANGAN
-													</p>
-
-													<p class="font-16 text-bold text-success font">
-														2.500
-													</p>
-												</div>
-												<div class="col-6 pt-0  rotate-180 icon-card text-success" style="">
-													<ion-icon class="" name="log-in"></ion-icon>
-												</div>
-											</div>
-											<div class="card-footer text-success font-08 px-2 py-1 alert alert-warning mb-0">
-												<b>+30%</b> dari minggu lalu
-											</div>
-										</div>
-									</div>
-
-									<div class="col-12 col-md-3">
-										<div class="card pb-0 shadow-sm">
-											<div class="row p-2">
-												<div class="col-6">
-													<p class="text-semibold font-08">
-														PJP LAMA
-													</p>
-
-													<p class="font-16 text-bold text-purple font">
-														2.000
-													</p>
-												</div>
-												<div class="col-6 pt-0 icon-card text-purple" style="">
-													<ion-icon class="" name="refresh"></ion-icon>
-												</div>
-											</div>
-											<div class="card-footer text-success font-08 px-2 py-1 alert alert-warning mb-0">
-												<b>+20%</b> dari minggu lalu
-											</div>
-										</div>
-									</div>
-
-
-									<div class="col-12 col-md-3">
-										<div class="card pb-0 shadow-sm">
-											<div class="row p-2">
-												<div class="col-6">
-													<p class="text-semibold font-08">
-														PJP BARU
-													</p>
-
-													<p class="font-16 text-bold text-primary font">
-														500
-													</p>
-												</div>
-												<div class="col-6 pt-0 icon-card text-primary" style="">
-													<ion-icon name="person-add"></ion-icon>
-												</div>
-											</div>
-											<div class="card-footer text-danger font-08 px-2 py-1 alert alert-warning mb-0">
-												<b>-5%</b> dari minggu lalu
-											</div>
-										</div>
-									</div>
-
-									
-									<div class="col-12 col-md-3">
-										<div class="card pb-0 shadow-sm">
-											<div class="row p-2">
-												<div class="col-6">
-													<p class="text-semibold font-08">
-														KELUAR
-													</p>
-
-													<p class="font-16 text-semibold text-danger font">
-														1.500
-													</p>
-												</div>
-												<div class="col-6 pt-0 icon-card text-danger" style="">
-													<ion-icon class="" name="log-in"></ion-icon>
-												</div>
-											</div>
-											<div class="card-footer text-danger font-08 px-2 py-1 alert alert-warning mb-0">
-												<b>-15%</b> dari minggu lalu
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
+					<div class="col-2 pt-2">
+						<div class="d-none d-md-block d-lg-block d-xl-block">
+							<span id="sidebarHide" class="is-pointer">
+								<i class="fa fa-chevron-left"></i>
+								<b class="font-09">Sembunyikan Menu</b>
+							</span>
+							<span id="sidebarShow" class="d-none is-pointer">
+								<i class="fa fa-chevron-right"></i>
+								<b class="font-09">Tampilkan Menu</b>
+							</span>
+						</div>
+						<div class="d-block d-md-none ">
+							<span id="collapserMobile" class="is-pointer">
+								<i class="fa fa-bars"></i>
+							</span>
 						</div>
 					</div>
+					<div class="col-10 float-right">
+						<div class="user-info float-right">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvADbJmFh9JJ1F20ZqH5dLZAum3uRLIU-pGg&usqp=CAU" class="rounded-circle navbar-img float-left"  >
+							<p class="float-left font-09 ml-2 d-none d-md-block d-lg-block d-xl-block">
+								<b>Husain Damar</b><br>
+								<small>Super Admin</small>
+							</p>
+						</div>
+						<div class="dropdown-location mt-2 mr-5 float-right ">
+							<select class="form-control form-control-sm select2 font-08 navbar-dropdown" >
+								<option>Jakarta</option>
+								<option>Bandung</option>
+								<option>Bekasi</option>
+								<option>Tanggerang Selatan</option>
+							</select>
+							<button class="btn btn-warning text-white font-07 btn-sm">
+								<i class="fa fa-plus"></i>
+							</button>
+						</div>
+					</div>			
+				</section>
+				<div class="d-block d-md-none ">&nbsp;</div>
+			</div>
 
-					<div class="row">
-						<div class="col-12 pr-5">
-							<div class="row  p-4">
-								<div class="col-12 col-md-6 mt-3">
-									<div class="card p-3 text-bold shadow-sm">
-										<p class="text-semibold font-08">TRANSAKSI MANUAL</p>
-										<p>
-											<span class="text-bold font-15 float-left">Rp 25.0000</span>
-											<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
-										</p>
-										<div id="chart-manual-transaction"></div>
+			<div class="">
+				<div class="col-12 ">
+					<div class="breadcumb mt-3">
+						<h5 class="text-bold">Dashboard</h5>
+					</div>
+
+					<div class="bg-darkgrey rounded">
+						<div class="row  p-4">
+							<div class="col-12 col-md-3 pb-3 pb-md-0">
+								<div class="card pb-0 shadow-sm">
+									<div class="row p-2">
+										<div class="col-6">
+											<p class="text-semibold font-08">
+												KEDATANGAN
+											</p>
+
+											<p class="font-16 text-bold text-success font">
+												2.500
+											</p>
+										</div>
+										<div class="col-6 pt-0  rotate-180 icon-card text-success">
+											<ion-icon class="" name="log-in"></ion-icon>
+										</div>
+									</div>
+									<div class="card-footer text-success font-08 px-2 py-1 alert alert-warning mb-0">
+										<b>+30%</b> dari minggu lalu
 									</div>
 								</div>
+							</div>
 
-								<div class="col-12 col-md-6 mt-3">
-									<div class="card p-3 text-bold shadow-sm">
-										<p class="text-semibold font-08">TRANSAKSI MEMBERSHIP</p>
-										<p>
-											<span class="text-bold font-15 float-left">1.200</span>
-											<span class="mt-2 font-09 float-right text-danger"><b>-10%</b> dari bulan lalu</span>
-										</p>
-										<div id="chart-membership-transaction"></div>
+							<div class="col-12 col-md-3 pb-3 pb-md-0">
+								<div class="card pb-0 shadow-sm">
+									<div class="row p-2">
+										<div class="col-6">
+											<p class="text-semibold font-08">
+												PJP LAMA
+											</p>
 
+											<p class="font-16 text-bold text-purple font">
+												2.000
+											</p>
+										</div>
+										<div class="col-6 pt-0 icon-card text-purple">
+											<ion-icon class="" name="refresh"></ion-icon>
+										</div>
+									</div>
+									<div class="card-footer text-success font-08 px-2 py-1 alert alert-warning mb-0">
+										<b>+20%</b> dari minggu lalu
 									</div>
 								</div>
+							</div>
 
-								<div class="col-12 col-md-6 mt-3">
-									<div class="card p-3 text-bold shadow-sm">
-										<p class="text-semibold font-08">TRANSAKSI DENGAN APLIKASI</p>
-										<p>
-											<span class="text-bold font-15 float-left">Rp 1.500.000</span>
-											<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
-										</p>
-										<div id="chart-application-transaction"></div>
 
+							<div class="col-12 col-md-3 pb-3 pb-md-0">
+								<div class="card pb-0 shadow-sm">
+									<div class="row p-2">
+										<div class="col-6">
+											<p class="text-semibold font-08">
+												PJP BARU
+											</p>
+
+											<p class="font-16 text-bold text-primary font">
+												500
+											</p>
+										</div>
+										<div class="col-6 pt-0 icon-card text-primary">
+											<ion-icon name="person-add"></ion-icon>
+										</div>
+									</div>
+									<div class="card-footer text-danger font-08 px-2 py-1 alert alert-warning mb-0">
+										<b>-5%</b> dari minggu lalu
 									</div>
 								</div>
+							</div>
 
-								<div class="col-12 col-md-6 mt-3">
-									<div class="card p-3 text-bold shadow-sm">
-										<p class="text-semibold font-08">LAMA PARKIR</p>
-										<p>
-											<span class="text-bold font-15 float-left">Rp 1.500.000</span>
-											<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
-										</p>
-										<div id="parking-duration"></div>
+
+							<div class="col-12 col-md-3 pb-3 pb-md-0">
+								<div class="card pb-0 shadow-sm">
+									<div class="row p-2">
+										<div class="col-6">
+											<p class="text-semibold font-08">
+												KELUAR
+											</p>
+
+											<p class="font-16 text-semibold text-danger font">
+												1.500
+											</p>
+										</div>
+										<div class="col-6 pt-0 icon-card text-danger">
+											<ion-icon class="" name="log-in"></ion-icon>
+										</div>
+									</div>
+									<div class="card-footer text-danger font-08 px-2 py-1 alert alert-warning mb-0">
+										<b>-15%</b> dari minggu lalu
 									</div>
 								</div>
+							</div>
 
-								<div class="col-12 mt-3">
-									<div class="card p-3 text-bold shadow-sm">
-										<p class="text-semibold font-08">WAKTU KEDATANGAN</p>
-										<p>
-											<span class="text-bold font-15 float-left">1.463</span>
-											<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
-										</p>
-										<div id="incoming-time"></div>
-									</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="">
+				
+				<div class="col-12 ">
+					<div class="row p-4">
+						<div class="col-12  pt-5">
+							<div class="input-group w-max-300">
+								<div class="input-group-prepend">
+									<span class="input-group-text text-warning " ><i class="fa fa-calendar"></i></span>
 								</div>
+								<input type="text" class="form-control font-control-sm"  name="datetimes" placeholder="09/09/2020 - 09/09/2020" aria-label="09/09/2020 - 09/09/2020">
+							</div>
+						</div>
+						<div class="col-12 col-md-6 mt-3">
+							<div class="card p-3 text-bold shadow-sm">
+								<p class="text-semibold font-08">TRANSAKSI MANUAL</p>
+								<p>
+									<span class="text-bold font-15 float-left">Rp 25.0000</span>
+									<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
+								</p>
+								<div id="chart-manual-transaction"></div>
+							</div>
+						</div>
 
-								<div class="col-12 mt-3">
-									<div class="card p-3 text-bold shadow-sm">
-										<p class="text-semibold font-08">WAKTU KELUAR</p>
-										<p>
-											<span class="text-bold font-15 float-left">1.463</span>
-											<span class="mt-2 font-09 float-right text-danger"><b>-10%</b> dari bulan lalu</span>
-										</p>
-										<div id="outcoming-time"></div>
-									</div>
-								</div>
+						<div class="col-12 col-md-6 mt-3">
+							<div class="card p-3 text-bold shadow-sm">
+								<p class="text-semibold font-08">TRANSAKSI MEMBERSHIP</p>
+								<p>
+									<span class="text-bold font-15 float-left">1.200</span>
+									<span class="mt-2 font-09 float-right text-danger"><b>-10%</b> dari bulan lalu</span>
+								</p>
+								<div id="chart-membership-transaction"></div>
 
-								<div class="col-12 mt-3">
-									<div class="card p-3 text-bold shadow-sm">
-										<p class="text-semibold font-08">METODE PEMBAYARAN</p>
+							</div>
+						</div>
 
-										<div id="payment-method"></div>
-									</div>
-								</div>
+						<div class="col-12 col-md-6 mt-3">
+							<div class="card p-3 text-bold shadow-sm">
+								<p class="text-semibold font-08">TRANSAKSI DENGAN APLIKASI</p>
+								<p>
+									<span class="text-bold font-15 float-left">Rp 1.500.000</span>
+									<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
+								</p>
+								<div id="chart-application-transaction"></div>
+
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6 mt-3">
+							<div class="card p-3 text-bold shadow-sm">
+								<p class="text-semibold font-08">LAMA PARKIR</p>
+								<p>
+									<span class="text-bold font-15 float-left">Rp 1.500.000</span>
+									<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
+								</p>
+								<div id="parking-duration"></div>
+							</div>
+						</div>
+
+						<div class="col-12 mt-3">
+							<div class="card p-3 text-bold shadow-sm">
+								<p class="text-semibold font-08">WAKTU KEDATANGAN</p>
+								<p>
+									<span class="text-bold font-15 float-left">1.463</span>
+									<span class="mt-2 font-09 float-right text-success"><b>+30%</b> dari bulan lalu</span>
+								</p>
+								<div id="incoming-time"></div>
+							</div>
+						</div>
+
+						<div class="col-12 mt-3">
+							<div class="card p-3 text-bold shadow-sm">
+								<p class="text-semibold font-08">WAKTU KELUAR</p>
+								<p>
+									<span class="text-bold font-15 float-left">1.463</span>
+									<span class="mt-2 font-09 float-right text-danger"><b>-10%</b> dari bulan lalu</span>
+								</p>
+								<div id="outcoming-time"></div>
+							</div>
+						</div>
+
+						<div class="col-12 mt-3">
+							<div class="card p-3 text-bold shadow-sm">
+								<p class="text-semibold font-08">METODE PEMBAYARAN</p>
+
+								<div id="payment-method"></div>
 							</div>
 						</div>
 					</div>
@@ -267,400 +374,417 @@
 			</div>
 		</div>
 	</div>
-
-</div>
 </body>
+
 
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('.select2').select2();
-	});
+		$('input[name="datetimes"]').daterangepicker({
+			startDate: moment(),
+			endDate: moment(),
+			autoApply: true,
+		});
 
-	Highcharts.chart('chart-manual-transaction', {
-		chart: {
-			type: 'column'
-		},
-		title: {
-			text: ''
-		},
-		subtitle: {
-			text: ''
-		},
-		exporting: {
-			enabled : false
-		},
-		xAxis: {
-			categories: [
-			'Jan',
-			'Feb',
-			'Mar',
-			'Apr',
-			'May',
-			'Jun',
-			'Jul',
-			'Aug',
-			'Sep',
-			'Oct',
-			'Nov',
-			'Dec'
-			],
-			crosshair: true
-		},
-		yAxis: {
-			min: 0,
-			title: {
-				text: ''
-			}
-		},
-		tooltip: {
-			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-			pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-			'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-			footerFormat: '</table>',
-			shared: true,
-			useHTML: true
-		},
-		plotOptions: {
-			column: {
-				pointPadding: 0.2,
-				borderWidth: 0
-			}
-		},
-		colors: ['#2ecc71'],
-		series: [{
-			name: 'TRANSAKSI MANUAL',
-			data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-		}]
-	});
+		$('#collapserMobile').on('click', function () {
+			$('#sidebar').toggleClass('active');
+		});
+		$('#sidebarHide').on('click', function () {
+			$('#sidebarHide').addClass('d-none');
+			$('#sidebarShow').removeClass('d-none');
+			$('#sidebar').toggleClass('active');
+		});
+		$('#sidebarShow').on('click', function () {
+			$('#sidebarShow').addClass('d-none');
+			$('#sidebarHide').removeClass('d-none');
+			$('#sidebar').toggleClass('active');
+		});
 
-	Highcharts.chart('chart-membership-transaction', {
-		chart: {
-			type: 'column'
-		},
-		title: {
-			text: ''
-		},
-		subtitle: {
-			text: ''
-		},
-		exporting: {
-			enabled : false
-		},
-		xAxis: {
-			categories: [
-			'Jan',
-			'Feb',
-			'Mar',
-			'Apr',
-			'May',
-			'Jun',
-			'Jul',
-			'Aug',
-			'Sep',
-			'Oct',
-			'Nov',
-			'Dec'
-			],
-			crosshair: true
-		},
-		yAxis: {
-			min: 0,
-			title: {
-				text: ''
-			}
-		},
-		tooltip: {
-			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-			pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-			'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-			footerFormat: '</table>',
-			shared: true,
-			useHTML: true
-		},
-		plotOptions: {
-			column: {
-				pointPadding: 0.2,
-				borderWidth: 0
-			}
-		},
-		colors: ['#3498db'],
-		series: [{
-			name: 'TRANSAKSI MEMBERSHIP',
-			data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-		}]
-	});
 
-	Highcharts.chart('chart-application-transaction', {
-		chart: {
-			type: 'column'
-		},
-		title: {
-			text: ''
-		},
-		subtitle: {
-			text: ''
-		},
-		exporting: {
-			enabled : false
-		},
-		xAxis: {
-			categories: [
-			'Jan',
-			'Feb',
-			'Mar',
-			'Apr',
-			'May',
-			'Jun',
-			'Jul',
-			'Aug',
-			'Sep',
-			'Oct',
-			'Nov',
-			'Dec'
-			],
-			crosshair: true
-		},
-		yAxis: {
-			min: 0,
-			title: {
-				text: ''
-			}
-		},
-		tooltip: {
-			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-			pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-			'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-			footerFormat: '</table>',
-			shared: true,
-			useHTML: true
-		},
-		plotOptions: {
-			column: {
-				pointPadding: 0.2,
-				borderWidth: 0
-			}
-		},
-		colors: ['#e67e22'],
-		series: [{
-			name: 'TRANSAKSI APLIKASI',
-			data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-		}]
-	});
-
-	Highcharts.chart('incoming-time', {
-		chart: {
-			type: 'column'
-		},
-		title: {
-			text: ''
-		},
-		subtitle: {
-			text: ''
-		},
-		exporting: {
-			enabled : false
-		},
-		xAxis: {
-			categories: [
-			'Jan',
-			'Feb',
-			'Mar',
-			'Apr',
-			'May',
-			'Jun',
-			'Jul',
-			'Aug',
-			'Sep',
-			'Oct',
-			'Nov',
-			'Dec'
-			],
-			crosshair: true
-		},
-		yAxis: {
-			min: 0,
-			title: {
-				text: ''
-			}
-		},
-		tooltip: {
-			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-			pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-			'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-			footerFormat: '</table>',
-			shared: true,
-			useHTML: true
-		},
-		plotOptions: {
-			column: {
-				pointPadding: 0.2,
-				borderWidth: 0
-			}
-		},
-		colors: ['#3498db'],
-		series: [{
-			name: 'INCOMING TIME',
-			data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-		}]
-	});
-
-	Highcharts.chart('outcoming-time', {
-		chart: {
-			type: 'column'
-		},
-		title: {
-			text: ''
-		},
-		subtitle: {
-			text: ''
-		},
-		exporting: {
-			enabled : false
-		},
-		xAxis: {
-			categories: [
-			'Jan',
-			'Feb',
-			'Mar',
-			'Apr',
-			'May',
-			'Jun',
-			'Jul',
-			'Aug',
-			'Sep',
-			'Oct',
-			'Nov',
-			'Dec'
-			],
-			crosshair: true
-		},
-		yAxis: {
-			min: 0,
-			title: {
-				text: ''
-			}
-		},
-		tooltip: {
-			headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-			pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-			'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-			footerFormat: '</table>',
-			shared: true,
-			useHTML: true
-		},
-		plotOptions: {
-			column: {
-				pointPadding: 0.2,
-				borderWidth: 0
-			}
-		},
-		colors: ['#e67e22'],
-		series: [{
-			name: 'OUTCOMING TIME',
-			data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-		}]
-	});
-
-	Highcharts.chart('parking-duration', {
-		chart: {
-			plotBackgroundColor: null,
-			plotBorderWidth: null,
-			plotShadow: false,
-			type: 'pie'
-		},
-		title: {
-			text: ''
-		},
-		exporting: {
-			enabled : false
-		},
-		tooltip: {
-			pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-		},
-		accessibility: {
-			point: {
-				valueSuffix: 'Jam'
-			}
-		},
-		plotOptions: {
-			pie: {
-				allowPointSelect: true,
-				cursor: 'pointer',
-				dataLabels: {
-					enabled: false
-				},
-				showInLegend: true
-			}
-		},
-		series: [{
-			innerSize: '20%',
-			name: 'LAMA PARKIR',
-			colorByPoint: true,
-			data: [{
-				name: '0-4 Jam',
-				y: 15,
-				sliced: true,
-				selected: true
-			}, {
-				name: '4-9 Jam',
-				y: 25
-			}, {
-				name: '9-15 Jam',
-				y: 50
-			}, {
-				name: '15-25 Jam',
-				y: 10
-			}]
-		}]
-	});
-
-	Highcharts.chart('payment-method', {
-		chart: {
-			plotBackgroundColor: null,
-			plotBorderWidth: null,
-			plotShadow: false,
-			type: 'pie'
-		},
-		title: {
-			text: ''
-		},
-		exporting: {
-			enabled : false
-		},
-		tooltip: {
-			pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-		},
-		plotOptions: {
-			pie: {
-				allowPointSelect: true,
-				cursor: 'pointer',
-				dataLabels: {
-					enabled: false
-				},
-				showInLegend: true
+		Highcharts.chart('chart-manual-transaction', {
+			chart: {
+				type: 'column'
 			},
-			series : {
-				align : 'left',
-			}
-		},
-		series: [{
-			innerSize: '20%',
-			name: 'PAYMENT COUNT',
-			colorByPoint: true,
-			data: [{
-				name: 'CASH',
-				y: 30,
-				sliced: true,
-				selected: true
-			}, {
-				name: 'GOPAY',
-				y: 30
-			}, {
-				name: 'MEMBERSHIP',
-				y: 30
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: ''
+			},
+			exporting: {
+				enabled : false
+			},
+			xAxis: {
+				categories: [
+				'Jan',
+				'Feb',
+				'Mar',
+				'Apr',
+				'May',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Oct',
+				'Nov',
+				'Dec'
+				],
+				crosshair: true
+			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: ''
+				}
+			},
+			tooltip: {
+				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+				footerFormat: '</table>',
+				shared: true,
+				useHTML: true
+			},
+			plotOptions: {
+				column: {
+					pointPadding: 0.2,
+					borderWidth: 0
+				}
+			},
+			colors: ['#2ecc71'],
+			series: [{
+				name: 'TRANSAKSI MANUAL',
+				data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
 			}]
-		}]
-	});
+		});
 
+		Highcharts.chart('chart-membership-transaction', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: ''
+			},
+			exporting: {
+				enabled : false
+			},
+			xAxis: {
+				categories: [
+				'Jan',
+				'Feb',
+				'Mar',
+				'Apr',
+				'May',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Oct',
+				'Nov',
+				'Dec'
+				],
+				crosshair: true
+			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: ''
+				}
+			},
+			tooltip: {
+				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+				footerFormat: '</table>',
+				shared: true,
+				useHTML: true
+			},
+			plotOptions: {
+				column: {
+					pointPadding: 0.2,
+					borderWidth: 0
+				}
+			},
+			colors: ['#3498db'],
+			series: [{
+				name: 'TRANSAKSI MEMBERSHIP',
+				data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+			}]
+		});
+
+		Highcharts.chart('chart-application-transaction', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: ''
+			},
+			exporting: {
+				enabled : false
+			},
+			xAxis: {
+				categories: [
+				'Jan',
+				'Feb',
+				'Mar',
+				'Apr',
+				'May',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Oct',
+				'Nov',
+				'Dec'
+				],
+				crosshair: true
+			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: ''
+				}
+			},
+			tooltip: {
+				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+				footerFormat: '</table>',
+				shared: true,
+				useHTML: true
+			},
+			plotOptions: {
+				column: {
+					pointPadding: 0.2,
+					borderWidth: 0
+				}
+			},
+			colors: ['#e67e22'],
+			series: [{
+				name: 'TRANSAKSI APLIKASI',
+				data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+			}]
+		});
+
+		Highcharts.chart('incoming-time', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: ''
+			},
+			exporting: {
+				enabled : false
+			},
+			xAxis: {
+				categories: [
+				'Jan',
+				'Feb',
+				'Mar',
+				'Apr',
+				'May',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Oct',
+				'Nov',
+				'Dec'
+				],
+				crosshair: true
+			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: ''
+				}
+			},
+			tooltip: {
+				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+				footerFormat: '</table>',
+				shared: true,
+				useHTML: true
+			},
+			plotOptions: {
+				column: {
+					pointPadding: 0.2,
+					borderWidth: 0
+				}
+			},
+			colors: ['#3498db'],
+			series: [{
+				name: 'INCOMING TIME',
+				data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+			}]
+		});
+
+		Highcharts.chart('outcoming-time', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: ''
+			},
+			exporting: {
+				enabled : false
+			},
+			xAxis: {
+				categories: [
+				'Jan',
+				'Feb',
+				'Mar',
+				'Apr',
+				'May',
+				'Jun',
+				'Jul',
+				'Aug',
+				'Sep',
+				'Oct',
+				'Nov',
+				'Dec'
+				],
+				crosshair: true
+			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: ''
+				}
+			},
+			tooltip: {
+				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				'<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+				footerFormat: '</table>',
+				shared: true,
+				useHTML: true
+			},
+			plotOptions: {
+				column: {
+					pointPadding: 0.2,
+					borderWidth: 0
+				}
+			},
+			colors: ['#e67e22'],
+			series: [{
+				name: 'OUTCOMING TIME',
+				data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+			}]
+		});
+
+		Highcharts.chart('parking-duration', {
+			chart: {
+				plotBackgroundColor: null,
+				plotBorderWidth: null,
+				plotShadow: false,
+				type: 'pie'
+			},
+			title: {
+				text: ''
+			},
+			exporting: {
+				enabled : false
+			},
+			tooltip: {
+				pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			},
+			accessibility: {
+				point: {
+					valueSuffix: 'Jam'
+				}
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: false
+					},
+					showInLegend: true
+				}
+			},
+			series: [{
+				name: 'LAMA PARKIR',
+				colorByPoint: true,
+				data: [{
+					name: '0-4 Jam',
+					y: 15,
+					sliced: true,
+					selected: true
+				}, {
+					name: '4-9 Jam',
+					y: 25
+				}, {
+					name: '9-15 Jam',
+					y: 50
+				}, {
+					name: '15-25 Jam',
+					y: 10
+				}]
+			}]
+		});
+
+		Highcharts.chart('payment-method', {
+			chart: {
+				plotBackgroundColor: null,
+				plotBorderWidth: null,
+				plotShadow: false,
+				type: 'pie'
+			},
+			title: {
+				text: ''
+			},
+			exporting: {
+				enabled : false
+			},
+			tooltip: {
+				pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: false
+					},
+					showInLegend: true
+				},
+				series : {
+					align : 'left',
+				}
+			},
+			series: [{
+				innerSize: '20%',
+				name: 'PAYMENT COUNT',
+				colorByPoint: true,
+				data: [{
+					name: 'CASH',
+					y: 30,
+					sliced: true,
+					selected: true
+				}, {
+					name: 'GOPAY',
+					y: 30
+				}, {
+					name: 'MEMBERSHIP',
+					y: 30
+				}]
+			}]
+		});
+	});
 </script>
 </html>
